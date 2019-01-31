@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
     <head>
         <meta charset="utf-8">
@@ -15,7 +16,7 @@
         <meta property="og:image" content="images/icons/logo_café-inline_petit.png" />
         <meta property="og:image:alt" content="logo Café-inline" /> 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -33,18 +34,9 @@
                                 <a class="nav-link lienNav " href="#logo">Accueil</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link lienNav " href="#promo">About</a>
+                                <a class="nav-link lienNav " href="#projets">Les projets</a>
                                 <li class="nav-item ">
-                                    <a class="nav-link lienNav " href="#ingredients">Igredients</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link lienNav " href="#menu">Menu</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link lienNav " href="#reviews">Reviews</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link lienNav " href="#reservation">Reservations</a>
+                                    <a class="nav-link lienNav " href="#team">la team</a>
                                 </li>
                                 <li class="nav-item lienExt">
                                     <a class="nav-link lienNav" href="#"> <span class="iconeNavbar" id="twitter1"> </span> </a>
@@ -54,6 +46,17 @@
                         </ul>
                     </div>
                 </nav>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container align-items-center">
+                <div class="row justify-content-around">
+                    <img src="images/icons/logo_café-inline.png" alt="logo de la promo café-inline" width="362" height="353">
+                    <div>
+                        <h1>Café-Inline</h1>
+                        <p>Bienvenue sur notre blog</p>
+                    </div>
+                </div>
             </div>
         </div>
     </header>

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Acmee';
+    src: url("fonts/Acme-Regular.ttf") format('truetype');
+}
+
+$font: 'Acmee';
+body {
+    font-family: $font;
+    header {}
+}
