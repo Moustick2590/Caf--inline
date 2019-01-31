@@ -33,7 +33,7 @@
                                 <a class="nav-link lienNav " href="#logo">Accueil</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link lienNav " href="#promo">About</a>
+                                <a class="nav-link lienNav " href="#articles">Articles</a>
                                 <li class="nav-item ">
                                     <a class="nav-link lienNav " href="#ingredients">Igredients</a>
                                 </li>
