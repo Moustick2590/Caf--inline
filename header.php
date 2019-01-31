@@ -15,9 +15,7 @@
         <meta property="og:description" content="Le site de la promo Access Code School 2018/2019" />
         <meta property="og:image" content="images/icons/logo_café-inline_petit.png" />
         <meta property="og:image:alt" content="logo Café-inline" /> 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/fontawesome.min.css">
-        <link rel="stylesheet" href="style.css">
+        <?php wp_head(); ?>
     </head>
     <body>
         <header>
@@ -29,21 +27,8 @@
             </button>
                     <div class="collapse navbar-collapse justify-content-around" id="navbarTogglerDemo01">
                         <a href="" class="navbar-brand"> <img src="images/icons/logo_café-inline_petit.png" alt="logo céfa inline mini" width="152" height="150"> </a>
-                        <ul class="navbar-nav mt-2 mt-lg-0 ">
-                            <li class="nav-item">
-                                <a class="nav-link lienNav " href="#logo">Accueil</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link lienNav " href="#projets">Les projets</a>
-                                <li class="nav-item ">
-                                    <a class="nav-link lienNav " href="#team">la team</a>
-                                </li>
-                                <li class="nav-item lienExt">
-                                    <a class="nav-link lienNav" href="#"> <span class="iconeNavbar" id="twitter1"> </span> </a>
-                                    <a class="nav-link lienNav" href="#"> <span class="iconeNavbar" id="youtube1"> </span> </a>
-                                    <a class="nav-link lienNav" href="#"> <span class="iconeNavbar" id="facebook1"> </span> </a>
-                                </li>
-                        </ul>
+                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                        
                     </div>
                 </nav>
             </div>
