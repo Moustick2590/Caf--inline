@@ -27,13 +27,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
                     <div class="collapse navbar-collapse justify-content-around" id="navbarTogglerDemo01">
-                        <a href="" class="navbar-brand"> <img src="img/logo-image.png" alt="logo restaurant" width="154" height="92"> </a>
+                        <a href="" class="navbar-brand"> <img src="images/icons/logo_café-inline_petit.png" alt="logo céfa inline mini" width="152" height="150"> </a>
                         <ul class="navbar-nav mt-2 mt-lg-0 ">
                             <li class="nav-item">
-                                <a class="nav-link lienNav " href="#promo">Home</a>
+                                <a class="nav-link lienNav " href="#logo">Accueil</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link lienNav " href="#about">About</a>
+                                <a class="nav-link lienNav " href="#promo">About</a>
                                 <li class="nav-item ">
                                     <a class="nav-link lienNav " href="#ingredients">Igredients</a>
                                 </li>
