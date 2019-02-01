@@ -5,7 +5,8 @@
         <nav class="navbar">
             <a class="navbar-brand" href="#">CAFE INLINE <br>
             ACCESS CODE SCHOOL</a>
-            <?php wp_nav_menu(array('theme_location' => 'Footer menu')); ?>
+            <?php wp_nav_menu(array('theme_location' => 'Footer Menu')); ?>
+            <?php wp_nav_menu( array( 'theme_location' => 'Social Menu' ) ); ?>
         
             <!-- <ul class="navbar-nav mr-auto">
             <li class="nav-item">
