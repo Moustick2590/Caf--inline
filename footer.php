@@ -6,7 +6,11 @@
             <a class="navbar-brand" href="#">CAFE INLINE <br>
             ACCESS CODE SCHOOL</a>
             <?php wp_nav_menu(array('theme_location' => 'Footer Menu')); ?>
-            <?php wp_nav_menu( array( 'theme_location' => 'Social Menu' ) ); ?>
+            <div class="d-flex">
+                <a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
+                <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+                <a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+            </div>
         
             <!-- <ul class="navbar-nav mr-auto">
             <li class="nav-item">

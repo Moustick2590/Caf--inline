@@ -26,9 +26,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
                     <div class="collapse navbar-collapse justify-content-around" id="navbarTogglerDemo01">
-                        <a href="" class="navbar-brand"> <img src="/wordpress/wp-content/uploads/2019/02/logo_café-inline_petit.png" alt="logo café inline mini" width="152" height="150"> </a>
+                        <a href="" class="navbar-brand">Café-inline<img src="/wordpress/wp-content/uploads/2019/02/logo_café-inline_petit.png" alt="logo café inline mini" id="small_icon" width="152" height="150"> </a>
                         <?php wp_nav_menu( array( 'theme_location' => 'Header Menu' ) ); ?>
-                        <?php wp_nav_menu( array( 'theme_location' => 'Social Menu' ) ); ?>
+                        <div class="d-flex">
+                            <a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
+                            <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+                        </div>
                     </div>
                 </nav>
             </div>
