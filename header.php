@@ -26,17 +26,17 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
                     <div class="collapse navbar-collapse justify-content-around" id="navbarTogglerDemo01">
-                        <a href="" class="navbar-brand"> <img src="images/icons/logo_café-inline_petit.png" alt="logo céfa inline mini" width="152" height="150"> </a>
-                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-                        
+                        <a href="" class="navbar-brand"> <img src="/wordpress/wp-content/uploads/2019/02/logo_café-inline_petit.png" alt="logo café inline mini" width="152" height="150"> </a>
+                        <?php wp_nav_menu( array( 'theme_location' => 'header menu' ) ); ?>
+
                     </div>
                 </nav>
             </div>
         </div>
         <div class="container-fluid">
             <div class="container align-items-center">
-                <div class="row justify-content-around">
-                    <img src="images/icons/logo_café-inline.png" alt="logo de la promo café-inline" width="362" height="353">
+                <div class="row d-flex justify-content-around">
+                    <img src="/wordpress/wp-content/uploads/2019/02/logo_café-inline.png" alt="logo de la promo café-inline" width="362" height="353">
                     <div>
                         <h1>Café-Inline</h1>
                         <p>Bienvenue sur notre blog</p>

@@ -6,5 +6,9 @@
 $font: 'Acmee';
 body {
     font-family: $font;
-    header {}
+    header {
+        h1 {
+            font-size: 2em;
+        }
+    }
 }
