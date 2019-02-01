@@ -28,7 +28,6 @@
                     <div class="collapse navbar-collapse justify-content-around" id="navbarTogglerDemo01">
                         <a href="" class="navbar-brand"> <img src="/wordpress/wp-content/uploads/2019/02/logo_café-inline_petit.png" alt="logo café inline mini" width="152" height="150"> </a>
                         <?php wp_nav_menu( array( 'theme_location' => 'Header menu' ) ); ?>
-
                     </div>
                 </nav>
             </div>
