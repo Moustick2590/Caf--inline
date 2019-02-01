@@ -15,6 +15,12 @@ body {
             height: 10vh;
             background-color: rgba($color: #180e05, $alpha: 0.8);
             #navheader {
+                a {
+                    color: white;
+                    &:hover {
+                        color: #f8d590;
+                    }
+                }
                 padding-top: 2.5%;
                 #small_icon {
                     width: 15%;

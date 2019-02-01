@@ -18,6 +18,12 @@ body header #navBar {
 body header #navBar #navheader {
   padding-top: 2.5%;
 }
+body header #navBar #navheader a {
+  color: white;
+}
+body header #navBar #navheader a:hover {
+  color: #f8d590;
+}
 body header #navBar #navheader #small_icon {
   width: 15%;
   height: 15%;
