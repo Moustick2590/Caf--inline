@@ -4,8 +4,58 @@
 }
 body {
   font-family: "Acmee";
+  background-size: cover;
 }
-body header h1 {
+body header {
+  height: 81vh;
+  background-image: url(images/background_header.jpg);
+  background-size: cover;
+}
+body header #navBar {
+  height: 10vh;
+  background-color: rgba(24, 14, 5, 0.8);
+}
+body header #navBar #navheader {
+  padding-top: 2.5%;
+}
+body header #navBar #navheader a {
+  color: white;
+}
+body header #navBar #navheader a:hover {
+  color: #f8d590;
+}
+body header #navBar #navheader #small_icon {
+  width: 15%;
+  height: 15%;
+  margin-top: -3%;
+  padding-left: 2%;
+}
+body header #logopromo {
+  padding: 5% 0;
+}
+body header #logopromo #cafe {
+  width: 50%;
+  height: 50%;
+}
+body header #logopromo #titre {
+  color: #FFEFD4;
+}
+body header #logopromo #titre h1 {
+  font-size: 4em;
+  padding-top: 5%;
+}
+body header #logopromo #titre p {
+  font-size: 2em;
+  padding-top: 30%;
+}
+body main {
+  background-image: url(images/background_main.png);
+}
+body .social {
+  margin-top: -1.5%;
+}
+body .social .liensocial {
+  padding: 2%;
   font-size: 2em;
 }
 
