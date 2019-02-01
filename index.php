@@ -1,3 +1,7 @@
+<?php
+/* template for Accueil*/
+?>
+
 <?php get_header(); ?>
 <main>
     <section id="team" class="container-fluid">

@@ -1,7 +1,12 @@
+<?php
+/*Template for a single post */
+?>
+
 <?php get_header(); ?>
+<main>
 <section id="article">
 <div class="container-fluid">
- <div>   
+<div>   
     <div class="row">
         <div class="col-md-5 offset-md-1">
 
@@ -20,12 +25,12 @@
     
         
         <?php 
-       the_author();
+        the_author();
         ?> 
-         </div>
+        </div>
         <div>
         <?php 
-      echo get_the_date();
+        echo get_the_date();
         ?> 
         </div>
         </div>
@@ -45,7 +50,7 @@
 </section>
 
 
-
+</main>
 
 
 
