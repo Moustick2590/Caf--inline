@@ -7,7 +7,7 @@
   <a class="navbar-brand" href="#">CAFE INLINE <br>
   ACCESS CODE SCHOOL</a>
   
-    <ul class="navbar-nav mr-auto">
+    /* <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="#">ACCUEIL</a>
       </li>
@@ -28,7 +28,7 @@
         <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
         <a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
       </li>
-    </ul>
+    </ul> */
 </nav>
     </div>
 
