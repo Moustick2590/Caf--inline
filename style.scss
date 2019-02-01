@@ -6,14 +6,36 @@
 $font: 'Acmee';
 body {
     font-family: $font;
+    background-image: url(images/background_café-inline.png);
+    background-size: cover;
     header {
         height: 60vh;
-        #small_icon {
-            width: 50%;
-            height: 50%;
+        #navBar {
+            height: 10vh;
+            background-color: rgba($color: #180e05, $alpha: 0.8);
+            #navheader {
+                padding-top: 2.5%;
+                #small_icon {
+                    width: 20%;
+                    height: 20%;
+                    margin-top: -3%;
+                    padding-left: 2%;
+                }
+            }
         }
-        h1 {
-            font-size: 2em;
+        #logopromo {
+            height: 60vh;
+            padding: 5% 0;
+            #titre {
+                color: white;
+                h1 {
+                    font-size: 2em;
+                }
+            }
         }
+    }
+    //-------------------------class icones réseaux sociaux-------------------------------------
+    .social {
+        margin-top: -1.5%;
     }
 }

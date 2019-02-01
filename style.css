@@ -1,16 +1,41 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Acmee";
   src: url("fonts/Acme-Regular.ttf") format("truetype");
 }
 body {
   font-family: "Acmee";
+  background-image: url(images/background_café-inline.png);
+  background-size: cover;
 }
-body header #small_icon {
-  width: 50%;
-  height: 50%;
+body header {
+  height: 60vh;
 }
-body header h1 {
+body header #navBar {
+  height: 10vh;
+  background-color: rgba(24, 14, 5, 0.8);
+}
+body header #navBar #navheader {
+  padding-top: 2.5%;
+}
+body header #navBar #navheader #small_icon {
+  width: 20%;
+  height: 20%;
+  margin-top: -3%;
+  padding-left: 2%;
+}
+body header #logopromo {
+  height: 60vh;
+  padding: 5% 0;
+}
+body header #logopromo #titre {
+  color: white;
+}
+body header #logopromo #titre h1 {
   font-size: 2em;
+}
+body .social {
+  margin-top: -1.5%;
 }
 
 /*# sourceMappingURL=style.css.map */
