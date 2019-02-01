@@ -8,7 +8,7 @@
             </div>
 
             <div id="team_photo" class="col-md-6">
-                <img src="" alt="photo de l'équipe">
+                <img src="/wordpress/wp-content/uploads/2019/02/team_photo.jpeg" alt="photo de l'équipe" >
             </div>
             </div>
         </div>
