@@ -6,36 +6,52 @@
 $font: 'Acmee';
 body {
     font-family: $font;
-    background-image: url(images/background_café-inline.png);
     background-size: cover;
     header {
-        height: 60vh;
+        height: 81vh;
+        background-image: url(images/background_header.jpg);
+        background-size: cover;
         #navBar {
             height: 10vh;
             background-color: rgba($color: #180e05, $alpha: 0.8);
             #navheader {
                 padding-top: 2.5%;
                 #small_icon {
-                    width: 20%;
-                    height: 20%;
+                    width: 15%;
+                    height: 15%;
                     margin-top: -3%;
                     padding-left: 2%;
                 }
             }
         }
         #logopromo {
-            height: 60vh;
             padding: 5% 0;
+            #cafe {
+                width: 50%;
+                height: 50%;
+            }
             #titre {
-                color: white;
+                color: #FFEFD4;
                 h1 {
+                    font-size: 4em;
+                    padding-top: 5%;
+                }
+                p {
                     font-size: 2em;
+                    padding-top: 30%;
                 }
             }
         }
     }
+    main {
+        background-image: url(images/background_main.png);
+    }
     //-------------------------class icones réseaux sociaux-------------------------------------
     .social {
         margin-top: -1.5%;
+        .liensocial {
+            padding: 2%;
+            font-size: 2em;
+        }
     }
 }

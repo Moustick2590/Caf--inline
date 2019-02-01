@@ -3,13 +3,13 @@
 <footer class="container-fluid">
     <div id="footer_container" class="container">
         <nav class="navbar">
-            <a class="navbar-brand" href="#">CAFE INLINE <br>
+            <a class="navbar-brand" target="_blank" href="https://www.accesscodeschool.fr/">CAFE INLINE <br>
             ACCESS CODE SCHOOL</a>
             <?php wp_nav_menu(array('theme_location' => 'Footer Menu')); ?>
-            <div class="d-flex">
-                <a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
-                <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
-                <a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+            <div class="d-flex social">
+                <a class="nav-link liensocial" href="#"><i class="fab fa-linkedin"></i></a>
+                <a class="nav-link liensocial" href="#"><i class="fab fa-facebook-square"></i></a>
+                <a class="nav-link liensocial" href="#"><i class="fab fa-twitter-square"></i></a>
             </div>
         
             <!-- <ul class="navbar-nav mr-auto">
