@@ -1,10 +1,13 @@
 @font-face {
-  font-family: "Acmee";
+  font-family: "roboto";
+  src: url("fonts/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "acme";
   src: url("fonts/Acme-Regular.ttf") format("truetype");
 }
 body {
-  font-family: "Acmee";
-  background-size: cover;
+  font-family: "acme";
 }
 body #mainheader {
   background-image: url(images/background_header.jpg);
@@ -12,11 +15,20 @@ body #mainheader {
   padding-bottom: 5%;
 }
 body #mainheader #navBar {
+  position: fixed;
+  z-index: 1000;
   height: 10vh;
   background-color: rgba(24, 14, 5, 0.8);
 }
 body #mainheader #navBar #navheader {
   padding-top: 2.5%;
+}
+body #mainheader #navBar #navheader ul {
+  display: flex;
+}
+body #mainheader #navBar #navheader ul li {
+  list-style-type: none;
+  margin: 0 2%;
 }
 body #mainheader #navBar #navheader a {
   color: white;
@@ -31,7 +43,7 @@ body #mainheader #navBar #navheader #small_icon {
   padding-left: 2%;
 }
 body #mainheader #logopromo {
-  padding: 5% 0;
+  padding-top: 10%;
 }
 body #mainheader #logopromo #cafe {
   width: 50%;
@@ -53,11 +65,20 @@ body #secondaryheader {
   background-repeat: no-repeat;
 }
 body #secondaryheader #navBar {
+  position: fixed;
+  z-index: 1000;
   height: 10vh;
   background-color: rgba(24, 14, 5, 0.8);
 }
 body #secondaryheader #navBar #navheader {
   padding-top: 2.5%;
+}
+body #secondaryheader #navBar #navheader ul {
+  display: flex;
+  justify-content: space-between;
+}
+body #secondaryheader #navBar #navheader ul li {
+  list-style-type: none;
 }
 body #secondaryheader #navBar #navheader a {
   color: white;
@@ -76,19 +97,101 @@ body #secondaryheader #logopromo1 #titre {
 }
 body #secondaryheader #logopromo1 #titre h1 {
   font-size: 4em;
-  padding: 5.7% 0;
+  padding: 12.5% 0 7.5% 0;
 }
 body #secondaryheader #logopromo1 #cafe {
   display: none;
 }
 body main {
   background-image: url(images/background_main.png);
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat-y;
 }
 body main #team {
   padding-top: 5%;
 }
 body main #last_articles {
   padding: 5% 0;
+}
+body main #article {
+  font-family: "roboto";
+  padding: 5% 0;
+}
+body main #article textarea {
+  width: 100%;
+}
+body main #article h2 {
+  text-align: center;
+  padding-bottom: 2%;
+  font-size: 3em;
+  font-weight: 800;
+  color: #180e05;
+}
+body main #article p {
+  font-size: 1.5em;
+}
+body main #article a {
+  text-decoration: none;
+  color: #472402;
+  font-weight: 900;
+}
+body main #article li {
+  list-style: none;
+}
+body main #article #rightblock {
+  background-color: #f8d590;
+  border-radius: 3em;
+  padding: 10%;
+  font-size: 1em;
+}
+body main #article #rightblock #recentspost {
+  font-size: 1.3em;
+}
+body main #article #rightblock #submit {
+  border: none;
+  border-radius: 1.5em;
+  background-color: #472402;
+  color: white;
+  width: 100%;
+  height: 2%;
+}
+body main #article #rightblock p {
+  font-size: 1em;
+}
+body main #article textarea {
+  border-radius: 2em;
+}
+body main #article #postedby {
+  font-size: 1em;
+}
+body main #article label {
+  font-size: 1em;
+}
+body main #article #submit {
+  font-size: 1em;
+}
+body main #article #reply-title {
+  font-size: 1.3em;
+}
+body main #article #comments {
+  font-size: 1.3em;
+}
+body main #article #author,
+body main #article #email,
+body main #article #url {
+  display: block;
+  width: 90%;
+  border-radius: 1%;
+}
+body main #promo {
+  padding: 4% 0;
+}
+body main #promo .alone {
+  text-align: center;
+}
+body main #promo .alone .photo {
+  padding: 10% 5%;
 }
 body footer {
   background-color: #180e05;

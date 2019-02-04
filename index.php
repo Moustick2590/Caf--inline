@@ -9,11 +9,14 @@
     <section id="team" class="container-fluid">
         <div class="container">
             <div class="row">
-            <div class="text col-md-6">
-                <p>blablabla blablabla blablablablablablablabla blablablabla blablablablablablabla blablablablablablabla blablablablablabla blablablablablablablabla blablabla blablablablablablablabla </p>
+            <div class="text col-md-5">
+                <p>Bienvenue sur le site de la promo Café-inline.<br>
+                Nous sommes en formation chez Access Code School pour devenir Développeur Intégrateur Web Junior. Ici deux mots d’ordre Café et Code. Vous retrouverez sur ce blog tous nos articles et une petite description de notre équipe.<br>
+                Explorez, lisez mais faites attention à l’overdose de caféine !</p>
+                <p>Bonne Visite !</p>
             </div>
 
-            <div id="team_photo" class="col-md-6">
+            <div id="team_photo" class="col-md-7">
                 <img class="img-fluid" src="/wordpress/wp-content/uploads/2019/02/team_photo1.jpeg" alt="photo de l'équipe" width="6216" height="4170">
             </div>
             </div>
@@ -50,7 +53,7 @@
 
             <?php if(count($slides) > 0) { ?>
 
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div id="carousel-example-generic" class="carousel slide col-md-8" data-ride="carousel">
 
                 <ol class="carousel-indicators">
                 <?php for($i=0;$i<count($slides);$i++) { ?>
@@ -72,6 +75,10 @@
                 <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a> 
             </div>
             <?php } ?>
+            <div class="col-md-4">
+                <p>Pendant notre formation nous avons écrit quelques articles de veille technologique. Si le web et les nouvelles technologies vous intéresse, trouvez votre bonheur dans notre sélection à gauche ou retrouvez l’ensemble de nos articles en cliquant sur le lien ci-dessous.</p>
+                <a href="">Voir les articles</a> 
+            </div>
         </div>
     </section>
 </main> 
