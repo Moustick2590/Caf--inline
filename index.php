@@ -12,7 +12,7 @@
             </div>
 
             <div id="team_photo" class="col-md-6">
-                <img src="/wordpress/wp-content/uploads/2019/02/team_photo.jpeg" alt="photo de l'équipe" >
+                <img class="img-fluid" src="/wordpress/wp-content/uploads/2019/02/team_photo1.jpeg" alt="photo de l'équipe" width="6216" height="4170">
             </div>
             </div>
         </div>
