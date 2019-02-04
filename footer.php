@@ -1,5 +1,4 @@
-
-</div> <!-- site-content -->
+<!-- site-content -->
 <footer class="container-fluid">
     <div id="footer_container" class="container">
         <nav class="navbar">

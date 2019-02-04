@@ -7,10 +7,10 @@ $font: 'Acmee';
 body {
     font-family: $font;
     background-size: cover;
-    header {
-        padding: 5% 0;
+    #mainheader {
         background-image: url(images/background_header.jpg);
         background-size: cover;
+        padding-bottom: 5%;
         #navBar {
             height: 10vh;
             background-color: rgba($color: #180e05, $alpha: 0.8);
@@ -34,7 +34,6 @@ body {
             padding: 5% 0;
             #cafe {
                 width: 50%;
-                height: 50%;
             }
             #titre {
                 color: #FFEFD4;
@@ -46,6 +45,42 @@ body {
                     font-size: 2em;
                     padding-top: 30%;
                 }
+            }
+        }
+    }
+    #secondaryheader {
+        background-image: url(images/background_header_pages.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        #navBar {
+            height: 10vh;
+            background-color: rgba($color: #180e05, $alpha: 0.8);
+            #navheader {
+                a {
+                    color: white;
+                    &:hover {
+                        color: #f8d590;
+                    }
+                }
+                padding-top: 2.5%;
+                #small_icon {
+                    width: 15%;
+                    height: 15%;
+                    margin-top: -3%;
+                    padding-left: 2%;
+                }
+            }
+        }
+        #logopromo1 {
+            #titre {
+                color: #FFEFD4;
+                h1 {
+                    font-size: 4em;
+                    padding: 5.7% 0;
+                }
+            }
+            #cafe {
+                display: none;
             }
         }
     }

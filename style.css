@@ -6,47 +6,80 @@ body {
   font-family: "Acmee";
   background-size: cover;
 }
-body header {
-  padding: 5% 0;
+body #mainheader {
   background-image: url(images/background_header.jpg);
   background-size: cover;
+  padding-bottom: 5%;
 }
-body header #navBar {
+body #mainheader #navBar {
   height: 10vh;
   background-color: rgba(24, 14, 5, 0.8);
 }
-body header #navBar #navheader {
+body #mainheader #navBar #navheader {
   padding-top: 2.5%;
 }
-body header #navBar #navheader a {
+body #mainheader #navBar #navheader a {
   color: white;
 }
-body header #navBar #navheader a:hover {
+body #mainheader #navBar #navheader a:hover {
   color: #f8d590;
 }
-body header #navBar #navheader #small_icon {
+body #mainheader #navBar #navheader #small_icon {
   width: 15%;
   height: 15%;
   margin-top: -3%;
   padding-left: 2%;
 }
-body header #logopromo {
+body #mainheader #logopromo {
   padding: 5% 0;
 }
-body header #logopromo #cafe {
+body #mainheader #logopromo #cafe {
   width: 50%;
-  height: 50%;
 }
-body header #logopromo #titre {
+body #mainheader #logopromo #titre {
   color: #FFEFD4;
 }
-body header #logopromo #titre h1 {
+body #mainheader #logopromo #titre h1 {
   font-size: 4em;
   padding-top: 5%;
 }
-body header #logopromo #titre p {
+body #mainheader #logopromo #titre p {
   font-size: 2em;
   padding-top: 30%;
+}
+body #secondaryheader {
+  background-image: url(images/background_header_pages.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #secondaryheader #navBar {
+  height: 10vh;
+  background-color: rgba(24, 14, 5, 0.8);
+}
+body #secondaryheader #navBar #navheader {
+  padding-top: 2.5%;
+}
+body #secondaryheader #navBar #navheader a {
+  color: white;
+}
+body #secondaryheader #navBar #navheader a:hover {
+  color: #f8d590;
+}
+body #secondaryheader #navBar #navheader #small_icon {
+  width: 15%;
+  height: 15%;
+  margin-top: -3%;
+  padding-left: 2%;
+}
+body #secondaryheader #logopromo1 #titre {
+  color: #FFEFD4;
+}
+body #secondaryheader #logopromo1 #titre h1 {
+  font-size: 4em;
+  padding: 5.7% 0;
+}
+body #secondaryheader #logopromo1 #cafe {
+  display: none;
 }
 body main {
   background-image: url(images/background_main.png);
