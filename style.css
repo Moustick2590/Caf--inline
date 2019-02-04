@@ -1,9 +1,13 @@
 @font-face {
-  font-family: "Acmee";
+  font-family: "roboto";
+  src: url("fonts/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "acme";
   src: url("fonts/Acme-Regular.ttf") format("truetype");
 }
 body {
-  font-family: "Acmee";
+  font-family: "acme";
   background-size: cover;
 }
 body header {
@@ -57,6 +61,74 @@ body .social {
 body .social .liensocial {
   padding: 2%;
   font-size: 2em;
+}
+
+#article {
+  background-image: url(images/background_main.png);
+  font-family: "roboto";
+  padding: 100px 0 100px 0;
+}
+#article textarea {
+  width: 100%;
+}
+#article h2 {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 50px;
+}
+#article p {
+  font-size: 20px;
+}
+#article a {
+  text-decoration: none;
+  color: #472402;
+  font-weight: 900;
+}
+#article li {
+  list-style: none;
+}
+#article #rightblock {
+  background-color: #f8d590;
+  border-radius: 30px;
+  padding: 20px;
+  font-size: 15px;
+}
+#article #rightblock #recentspost {
+  font-size: 20px;
+}
+#article #rightblock #submit {
+  border: none;
+  border-radius: 30px;
+  background-color: #472402;
+  color: white;
+  width: 30%;
+  height: 30px;
+}
+#article #rightblock p {
+  font-size: 15px;
+}
+#article textarea {
+  border-radius: 30px;
+}
+#article #postedby {
+  font-size: 15px;
+}
+#article label {
+  font-size: 15px;
+}
+#article #submit {
+  font-size: 15px;
+}
+#article #reply-title {
+  font-size: 20px;
+}
+#article #comments {
+  font-size: 20px;
+}
+#article #author, #article #email, #article #url {
+  display: block;
+  width: 100%;
+  border-radius: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
