@@ -1,3 +1,4 @@
+<?php
 // Chargement des styles
 
 wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
