@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
     <head>
         <meta charset="utf-8">
@@ -14,9 +15,7 @@
         <meta property="og:description" content="Le site de la promo Access Code School 2018/2019" />
         <meta property="og:image" content="images/icons/logo_café-inline_petit.png" />
         <meta property="og:image:alt" content="logo Café-inline" /> 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
+        <?php wp_head(); ?>
     </head>
     <body>
         <header>
@@ -27,33 +26,22 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
                     <div class="collapse navbar-collapse justify-content-around" id="navbarTogglerDemo01">
-                        <a href="" class="navbar-brand"> <img src="images/icons/logo_café-inline_petit.png" alt="logo céfa inline mini" width="152" height="150"> </a>
-                        <ul class="navbar-nav mt-2 mt-lg-0 ">
-                            <li class="nav-item">
-                                <a class="nav-link lienNav " href="#logo">Accueil</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link lienNav " href="#articles">Articles</a>
-                                <li class="nav-item ">
-                                    <a class="nav-link lienNav " href="#ingredients">Igredients</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link lienNav " href="#menu">Menu</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link lienNav " href="#reviews">Reviews</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link lienNav " href="#reservation">Reservations</a>
-                                </li>
-                                <li class="nav-item lienExt">
-                                    <a class="nav-link lienNav" href="#"> <span class="iconeNavbar" id="twitter1"> </span> </a>
-                                    <a class="nav-link lienNav" href="#"> <span class="iconeNavbar" id="youtube1"> </span> </a>
-                                    <a class="nav-link lienNav" href="#"> <span class="iconeNavbar" id="facebook1"> </span> </a>
-                                </li>
-                        </ul>
+                        <a href="" class="navbar-brand"> <img src="/wordpress/wp-content/uploads/2019/02/logo_café-inline_petit.png" alt="logo café inline mini" width="152" height="150"> </a>
+                        <?php wp_nav_menu( array( 'theme_location' => 'Header Menu' ) ); ?>
+                        <?php wp_nav_menu( array( 'theme_location' => 'Social Menu' ) ); ?>
                     </div>
                 </nav>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container align-items-center">
+                <div class="row d-flex justify-content-around">
+                    <img src="/wordpress/wp-content/uploads/2019/02/logo_café-inline.png" alt="logo de la promo café-inline" width="362" height="353">
+                    <div>
+                        <h1>Café-Inline</h1>
+                        <p>Bienvenue sur notre blog</p>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
