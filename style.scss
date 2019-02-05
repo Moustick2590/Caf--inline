@@ -19,14 +19,15 @@ body {
         #navBar {
             position: fixed;
             z-index: 1000;
-            height: 10vh;
             background-color: rgba($color: #180e05, $alpha: 0.8);
             #navheader {
                 ul {
                     display: flex;
+                    align-items: center;
+                    width: 50vw;
                     li {
                         list-style-type: none;
-                        margin: 0 2%;
+                        padding: 0 3%;
                     }
                 }
                 a {
@@ -69,14 +70,15 @@ body {
         #navBar {
             position: fixed;
             z-index: 1000;
-            height: 10vh;
             background-color: rgba($color: #180e05, $alpha: 0.8);
             #navheader {
                 ul {
                     display: flex;
-                    justify-content: space-between;
+                    align-items: center;
+                    width: 50vw;
                     li {
                         list-style-type: none;
+                        padding: 0 3%;
                     }
                 }
                 a {
@@ -201,6 +203,13 @@ body {
     footer {
         background-color: #180e05;
         padding: 2% 0;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+                list-style-type: none;
+            }
+        }
         a {
             color: white;
             &:hover {

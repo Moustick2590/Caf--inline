@@ -17,7 +17,6 @@ body #mainheader {
 body #mainheader #navBar {
   position: fixed;
   z-index: 1000;
-  height: 10vh;
   background-color: rgba(24, 14, 5, 0.8);
 }
 body #mainheader #navBar #navheader {
@@ -25,10 +24,12 @@ body #mainheader #navBar #navheader {
 }
 body #mainheader #navBar #navheader ul {
   display: flex;
+  align-items: center;
+  width: 50vw;
 }
 body #mainheader #navBar #navheader ul li {
   list-style-type: none;
-  margin: 0 2%;
+  padding: 0 3%;
 }
 body #mainheader #navBar #navheader a {
   color: white;
@@ -67,7 +68,6 @@ body #secondaryheader {
 body #secondaryheader #navBar {
   position: fixed;
   z-index: 1000;
-  height: 10vh;
   background-color: rgba(24, 14, 5, 0.8);
 }
 body #secondaryheader #navBar #navheader {
@@ -75,10 +75,12 @@ body #secondaryheader #navBar #navheader {
 }
 body #secondaryheader #navBar #navheader ul {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  width: 50vw;
 }
 body #secondaryheader #navBar #navheader ul li {
   list-style-type: none;
+  padding: 0 3%;
 }
 body #secondaryheader #navBar #navheader a {
   color: white;
@@ -196,6 +198,13 @@ body main #promo .alone .photo {
 body footer {
   background-color: #180e05;
   padding: 2% 0;
+}
+body footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+body footer ul li {
+  list-style-type: none;
 }
 body footer a {
   color: white;
