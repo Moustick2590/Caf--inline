@@ -2,76 +2,60 @@
 /* Template Name: Articles
 */
 ?>
+
 <?php get_header(); ?>
 <?php get_template_part( 'template-parts/template-part', 'mainheader' ); ?>
 
 <main>
     <section class="container-fluid">
         <div class="container">
-            <div class="post-list">
-                <?php $myposts = get_posts('numberposts=-1&offset=$debut');
-                foreach( $myposts as $post) : setup_postdata( $post ) ?>
-                <h1><?php the_title(); ?></h1>
-                <?php echo get_the_post_thumbnail(); ?>
+<?php
+$query = new WP_Query(array(
+    'post_status' => 'publish',
+    'orderby' => 'title',
+    'order' => 'ASC',
+    'posts_per_page' => -1
+));
 
-                <!-- Only display part of the post so the user has to click "More!" -->
-                <?php the_excerpt(); ?>
+$post_count = $query->post_count;
+$posts_per_column = ceil($post_count / 2);
 
-                <a href="<?php the_permalink(); ?>">Voir plus</a>
-                <?php endforeach; ?>
+$rows = array();
+$count = 0;
+while ($query->have_posts()) {
+    $query->the_post();
+    if ($rows[$count] == "") {
+        $rows[$count] = '<div class="row justify-content-between">';
+    }
+    $rows[$count] = $rows[$count] . 
+    '<div class="col-xs-12 col-sm-8 col-md-5 preview-articles">' .
+        '<div class="post-title">
+            <h3><a href="' . get_permalink() . '">' . get_the_title() . '</a></h3>
+        </div>' .
+        '<div class="post-author"> ' . 
+            '<img src="' .get_the_post_thumbnail_url(). '" class="img-fluid post-image" alt="image de l\'article">'  . 
+            '<div class="d-flex justify-content-between">
+                <p class="auteur_date">' .get_the_author().'</p><p class="auteur_date">' . get_the_date(). '</p>
+            </div> 
+            <div class="resume">' .
+            get_the_excerpt() .
+            '</div>
+            <div class="d-flex justify-content-end">
+                <a href="' . get_permalink() . '" class="lien_single"><img src="/wordpress/wp-content/uploads/2019/02/services-icon1.png" alt="grains de café" width="63" height="56" class="img-fluid grains">Voir l\'article</a>
             </div>
         </div>
-    </section>
-</main>
-<a href="<?php the_permalink(); ?>">Voir plus</a>
-<?php endforeach; ?>
-</div>
+    </div>';
+    $count++;
+    if ($count == $posts_per_column) {
+        $count = 0;
+    }
+}
 
-
-<!--<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
- Si l'Article est dans la Catégorie que nous souhaitons exclure, nous passons à l'Article suivant. 
-<?php if (in_category('')) continue; ?>
-
-<div class="post">
-
- <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-
- <small><?php the_time('F jS, Y'); ?></small>
-
- <div class="entry">
-   <?php the_content(); ?>
- </div>
-
- <p class="postmetadata">Posted in <?php the_category(', '); ?></p>
-</div> fin du premier bloc div 
-
-<?php endwhile; else: ?>
-<p>Sorry, no posts matched your criteria.</p>
-<?php endif; ?> -->
-
-<section>
-<div class="container">
-
-// wp-query récupère tous les articles
-<?php $articles = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1)); ?>
-
-// si les articles existent
-<?php if ( $articles->have_posts() ) : ?>
-//tant qu'il y a des articles on répète le code
-<?php while ( $articles->have_posts() ) : $articles->the_post(); ?>
-<div class="col-xs-12 col-sm-5">
-<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-<?php the_post_thumbnail();?>
-<p>Date : <?php the_time('d F Y'); ?></p>
-<p>Auteur : <?php the_author(); ?></p>
-<p><?php the_excerpt();?></p>
-<a href="<?php the_permalink(); ?>">Voir l'article</a>
-</div>
-<?php endwhile; ?>
-<?php wp_reset_postdata(); ?>
-<?php else : ?>
-<p><?php _e( 'Aucun article.' ); ?></p>
-<?php endif; ?>
+foreach ($rows as $row) {
+    echo $row . '</div>';
+} ?>
 </div>
 </section>
+</main>
+
+<?php get_footer(); ?>

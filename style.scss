@@ -21,6 +21,8 @@ body {
             z-index: 1000;
             background-color: rgba($color: #180e05, $alpha: 0.8);
             #navheader {
+                display: flex;
+                justify-content: space-between;
                 ul {
                     display: flex;
                     align-items: center;
@@ -41,9 +43,9 @@ body {
                 }
                 padding-top: 2.5%;
                 #small_icon {
-                    width: 50%;
-                    height: 50%;
-                    margin-top: -20%;
+                    width: 20%;
+                    height: 20%;
+                    margin-top: -10%;
                     padding-left: 2%;
                 }
             }
@@ -75,6 +77,8 @@ body {
             z-index: 1000;
             background-color: rgba($color: #180e05, $alpha: 0.8);
             #navheader {
+                display: flex;
+                justify-content: space-between;
                 ul {
                     display: flex;
                     align-items: center;
@@ -95,9 +99,9 @@ body {
                 }
                 padding-top: 2.5%;
                 #small_icon {
-                    width: 50%;
-                    height: 50%;
-                    margin-top: -20%;
+                    width: 20%;
+                    height: 20%;
+                    margin-top: -10%;
                     padding-left: 2%;
                 }
             }
@@ -125,6 +129,22 @@ body {
         }
         #last_articles {
             padding: 5% 0;
+            .container {
+                #carousel {
+                    .carousel-inner {
+                        .carousel-item {
+                            height: 40vh;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            .carousel_text {
+                                color: white;
+                                text-shadow: 1px 1px 1px #000000;
+                                background-color: rgba(40, 40, 40, 0.5);
+                            }
+                        }
+                    }
+                }
+            }
         }
         #article {
             font-family: $articlefont;
@@ -196,6 +216,42 @@ body {
                 border-radius: 1%;
             }
         }
+        .preview-articles {
+            background-image: url(images/background_biscuit.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            padding: 5%;
+            margin: 5% 0;
+            color: white;
+            .post-title {
+                text-align: center;
+                padding: 4% 2% 2% 2%;
+            }
+            .post-image {
+                padding: 2%;
+            }
+            .auteur_date {
+                font-size: 1.3em;
+                padding: 2%;
+            }
+            .resume {
+                text-align: justify;
+                padding: 2%
+            }
+            a {
+                color: #f8d590;
+                &:hover {
+                    color: #FFEFD4;
+                }
+            }
+            .lien_single {
+                padding: 2% 2% 4% 2%;
+                .grains {
+                    width: 35%;
+                    height: auto;
+                }
+            }
+        }
         #promo {
             padding: 4% 0;
             .alone {
@@ -209,19 +265,24 @@ body {
     footer {
         background-color: #180e05;
         padding: 2% 0;
-        ul {
+        #navfooter {
             display: flex;
-            align-items: center;
-            width: 50vw;
-            li {
-                list-style-type: none;
-                padding: 0 3%;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            ul {
+                display: flex;
+                align-items: center;
+                width: 50vw;
+                li {
+                    list-style-type: none;
+                    padding: 0 3%;
+                }
             }
-        }
-        a {
-            color: white;
-            &:hover {
-                color: #f8d590;
+            a {
+                color: white;
+                &:hover {
+                    color: #f8d590;
+                }
             }
         }
     }

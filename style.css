@@ -20,6 +20,8 @@ body #mainheader #navBar {
   background-color: rgba(24, 14, 5, 0.8);
 }
 body #mainheader #navBar #navheader {
+  display: flex;
+  justify-content: space-between;
   padding-top: 2.5%;
 }
 body #mainheader #navBar #navheader ul {
@@ -41,9 +43,9 @@ body #mainheader #navBar #navheader a:hover {
   color: #f8d590;
 }
 body #mainheader #navBar #navheader #small_icon {
-  width: 50%;
-  height: 50%;
-  margin-top: -20%;
+  width: 20%;
+  height: 20%;
+  margin-top: -10%;
   padding-left: 2%;
 }
 body #mainheader #logopromo {
@@ -74,6 +76,8 @@ body #secondaryheader #navBar {
   background-color: rgba(24, 14, 5, 0.8);
 }
 body #secondaryheader #navBar #navheader {
+  display: flex;
+  justify-content: space-between;
   padding-top: 2.5%;
 }
 body #secondaryheader #navBar #navheader ul {
@@ -95,9 +99,9 @@ body #secondaryheader #navBar #navheader a:hover {
   color: #f8d590;
 }
 body #secondaryheader #navBar #navheader #small_icon {
-  width: 50%;
-  height: 50%;
-  margin-top: -20%;
+  width: 20%;
+  height: 20%;
+  margin-top: -10%;
   padding-left: 2%;
 }
 body #secondaryheader #logopromo1 #titre {
@@ -121,6 +125,16 @@ body main #team {
 }
 body main #last_articles {
   padding: 5% 0;
+}
+body main #last_articles .container #carousel .carousel-inner .carousel-item {
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body main #last_articles .container #carousel .carousel-inner .carousel-item .carousel_text {
+  color: white;
+  text-shadow: 1px 1px 1px #000000;
+  background-color: rgba(40, 40, 40, 0.5);
 }
 body main #article {
   font-family: "roboto";
@@ -192,6 +206,42 @@ body main #article #url {
   width: 90%;
   border-radius: 1%;
 }
+body main .preview-articles {
+  background-image: url(images/background_biscuit.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 5%;
+  margin: 5% 0;
+  color: white;
+}
+body main .preview-articles .post-title {
+  text-align: center;
+  padding: 4% 2% 2% 2%;
+}
+body main .preview-articles .post-image {
+  padding: 2%;
+}
+body main .preview-articles .auteur_date {
+  font-size: 1.3em;
+  padding: 2%;
+}
+body main .preview-articles .resume {
+  text-align: justify;
+  padding: 2%;
+}
+body main .preview-articles a {
+  color: #f8d590;
+}
+body main .preview-articles a:hover {
+  color: #FFEFD4;
+}
+body main .preview-articles .lien_single {
+  padding: 2% 2% 4% 2%;
+}
+body main .preview-articles .lien_single .grains {
+  width: 35%;
+  height: auto;
+}
 body main #promo {
   padding: 4% 0;
 }
@@ -205,19 +255,24 @@ body footer {
   background-color: #180e05;
   padding: 2% 0;
 }
-body footer ul {
+body footer #navfooter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+body footer #navfooter ul {
   display: flex;
   align-items: center;
   width: 50vw;
 }
-body footer ul li {
+body footer #navfooter ul li {
   list-style-type: none;
   padding: 0 3%;
 }
-body footer a {
+body footer #navfooter a {
   color: white;
 }
-body footer a:hover {
+body footer #navfooter a:hover {
   color: #f8d590;
 }
 body .social {

@@ -25,6 +25,8 @@
 
     <section id="last_articles" class="container-fluid">
         <div class="container">
+
+        
             <?php
                 $slides = array();
                 $args = array(
@@ -53,26 +55,27 @@
 
             <?php if(count($slides) > 0) { ?>
 
-            <div id="carousel-example-generic" class="carousel slide col-md-8" data-ride="carousel">
+            <div id="carousel" class="carousel slide col-md-8" data-ride="carousel">
 
                 <ol class="carousel-indicators">
                 <?php for($i=0;$i<count($slides);$i++) { ?>
-                <li data-target="#carousel-example-generic" data-slide-to="<?php echo $i ?>" <?php if($i==0) { ?>class="active"<?php } ?>></li>
+                <li data-target="#carousel" data-slide-to="<?php echo $i ?>" <?php if($i==0) { ?>class="active"<?php } ?>></li>
                 <?php } ?>
                 </ol>
 
                 <div class="carousel-inner" role="listbox">
                     <?php $i=0; foreach($slides as $slide) { extract($slide); ?>
-                    <div class="carousel-item <?php if($i == 0) { ?>active<?php } ?>">
-                        <img src="<?php echo $image ?>" alt="<?php echo esc_attr($title); ?>">
-                        <div class="carousel-caption"><h3><?php echo $title; ?></h3><p><?php echo $excerpt; ?></p>
+                    <div style="background-image: url('<?php echo $image ?>');" class="carousel-item <?php if($i == 0) { ?>active<?php } ?>">
+                        <div class="carousel_text">
+                            <h3><?php echo $title; ?></h3>
+                            <p><?php echo $excerpt; ?></p>
                         </div>
                     </div>
                     <?php $i++; } ?>
                 </div>
 
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a> 
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a> 
             </div>
             <?php } ?>
             <div class="col-md-4">
