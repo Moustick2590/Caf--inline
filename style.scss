@@ -20,6 +20,9 @@ body {
             position: fixed;
             z-index: 1000;
             background-color: rgba($color: #180e05, $alpha: 0.8);
+            .burger {
+                background-image: url(images/icons/cookie.png);
+            }
             #navheader {
                 display: flex;
                 justify-content: space-between;
@@ -76,6 +79,9 @@ body {
             position: fixed;
             z-index: 1000;
             background-color: rgba($color: #180e05, $alpha: 0.8);
+            .burger {
+                background-image: url(images/icons/cookie.png);
+            }
             #navheader {
                 display: flex;
                 justify-content: space-between;
@@ -121,27 +127,46 @@ body {
     }
     main {
         background-image: url(images/background_main.png);
-        background-size: auto;
+        background-size: 100% auto;
         background-position: center;
         background-repeat: repeat-y;
         #team {
             padding-top: 5%;
+            text-align: justify;
         }
         #last_articles {
             padding: 5% 0;
-            .container {
-                #carousel {
-                    .carousel-inner {
-                        .carousel-item {
-                            height: 40vh;
-                            background-size: cover;
-                            background-repeat: no-repeat;
-                            .carousel_text {
-                                color: white;
-                                text-shadow: 1px 1px 1px #000000;
-                                background-color: rgba(40, 40, 40, 0.5);
+            #carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        min-height: 50vh;
+                        background-size: 100% auto;
+                        background-repeat: no-repeat;
+                        .carousel_text {
+                            min-heigh: 50vh;
+                            width: 80%;
+                            margin: auto;
+                            color: white;
+                            text-shadow: 1px 1px 1px #000000;
+                            background-color: rgba(40, 40, 40, 0.5);
+                            padding: 5%;
+                            p {
+                                text-align: justify;
+                            }
+                            h3 {
+                                text-align: center;
                             }
                         }
+                    }
+                }
+            }
+            #pres-article {
+                text-align: justify;
+                padding: 5%;
+                a {
+                    color: #472402;
+                    &:hover {
+                        color: #f8d590;
                     }
                 }
             }
@@ -267,12 +292,9 @@ body {
         padding: 2% 0;
         #navfooter {
             display: flex;
-            justify-content: space-between;
-            flex-wrap: nowrap;
             ul {
                 display: flex;
                 align-items: center;
-                width: 50vw;
                 li {
                     list-style-type: none;
                     padding: 0 3%;
@@ -290,7 +312,7 @@ body {
     .social {
         margin-top: -1.5%;
         .liensocial {
-            padding: 2%;
+            padding: 5%;
             font-size: 2em;
         }
     }

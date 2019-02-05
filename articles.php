@@ -25,7 +25,7 @@ $count = 0;
 while ($query->have_posts()) {
     $query->the_post();
     if ($rows[$count] == "") {
-        $rows[$count] = '<div class="row justify-content-between">';
+        $rows[$count] = '<div class="row justify-content-around">';
     }
     $rows[$count] = $rows[$count] . 
     '<div class="col-xs-12 col-sm-8 col-md-5 preview-articles">' .
