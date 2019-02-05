@@ -30,6 +30,9 @@ body {
                         padding: 0 3%;
                     }
                 }
+                #lien_cafe {
+                    margin-top: -1%;
+                }
                 a {
                     color: white;
                     &:hover {
@@ -38,9 +41,9 @@ body {
                 }
                 padding-top: 2.5%;
                 #small_icon {
-                    width: 15%;
-                    height: 15%;
-                    margin-top: -3%;
+                    width: 50%;
+                    height: 50%;
+                    margin-top: -20%;
                     padding-left: 2%;
                 }
             }
@@ -81,6 +84,9 @@ body {
                         padding: 0 3%;
                     }
                 }
+                #lien_cafe {
+                    margin-top: -1%;
+                }
                 a {
                     color: white;
                     &:hover {
@@ -89,9 +95,9 @@ body {
                 }
                 padding-top: 2.5%;
                 #small_icon {
-                    width: 15%;
-                    height: 15%;
-                    margin-top: -3%;
+                    width: 50%;
+                    height: 50%;
+                    margin-top: -20%;
                     padding-left: 2%;
                 }
             }
@@ -205,9 +211,11 @@ body {
         padding: 2% 0;
         ul {
             display: flex;
-            justify-content: space-between;
+            align-items: center;
+            width: 50vw;
             li {
                 list-style-type: none;
+                padding: 0 3%;
             }
         }
         a {

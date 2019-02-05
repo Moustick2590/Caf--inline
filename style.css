@@ -31,6 +31,9 @@ body #mainheader #navBar #navheader ul li {
   list-style-type: none;
   padding: 0 3%;
 }
+body #mainheader #navBar #navheader #lien_cafe {
+  margin-top: -1%;
+}
 body #mainheader #navBar #navheader a {
   color: white;
 }
@@ -38,9 +41,9 @@ body #mainheader #navBar #navheader a:hover {
   color: #f8d590;
 }
 body #mainheader #navBar #navheader #small_icon {
-  width: 15%;
-  height: 15%;
-  margin-top: -3%;
+  width: 50%;
+  height: 50%;
+  margin-top: -20%;
   padding-left: 2%;
 }
 body #mainheader #logopromo {
@@ -82,6 +85,9 @@ body #secondaryheader #navBar #navheader ul li {
   list-style-type: none;
   padding: 0 3%;
 }
+body #secondaryheader #navBar #navheader #lien_cafe {
+  margin-top: -1%;
+}
 body #secondaryheader #navBar #navheader a {
   color: white;
 }
@@ -89,9 +95,9 @@ body #secondaryheader #navBar #navheader a:hover {
   color: #f8d590;
 }
 body #secondaryheader #navBar #navheader #small_icon {
-  width: 15%;
-  height: 15%;
-  margin-top: -3%;
+  width: 50%;
+  height: 50%;
+  margin-top: -20%;
   padding-left: 2%;
 }
 body #secondaryheader #logopromo1 #titre {
@@ -201,10 +207,12 @@ body footer {
 }
 body footer ul {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  width: 50vw;
 }
 body footer ul li {
   list-style-type: none;
+  padding: 0 3%;
 }
 body footer a {
   color: white;
