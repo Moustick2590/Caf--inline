@@ -40,8 +40,8 @@
                     <p>ERREUR 418 : I’m a teapot.</p>
                 </div>
                 <div class="col-md-4 alone">
-                    <img class="img-fluid photo" src="/wordpress/wp-content/uploads/2019/02/edouard_cookie.png" alt="photo de Edouard" width="1638" height="1469">
-                    <h2>Edouard Liegeon</h2>
+                    <img class="img-fluid photo" src="/wordpress/wp-content/uploads/2019/02/edouard_cookie.png" alt="photo de Édouard" width="1638" height="1469">
+                    <h2>Édouard Liegeon</h2>
                     <p>Grand adepte de JavaScript , mais pas dans les deux sens !</p>
                 </div>
                 <div class="col-md-4 alone">
