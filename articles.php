@@ -5,6 +5,8 @@
 
 <?php get_header(); ?>
 <?php get_template_part( 'template-parts/template-part', 'mainheader' ); ?>
+<p>Nos articles !</p>
+<?php get_template_part( 'template-parts/template-part', 'endmainheader' ); ?>
 
 <main>
     <section class="container-fluid">
@@ -25,12 +27,14 @@ $count = 0;
 while ($query->have_posts()) {
     $query->the_post();
     if ($rows[$count] == "") {
-        $rows[$count] = '<div class="row justify-content-around">';
+        $rows[$count] = '<div class="row d-flex justify-content-between">';
     }
     if(get_the_post_thumbnail() == '') {
-        $url = "https://localhost/wordpress/wp-content/uploads/2019/02/no_picture.png";
+        $url = "http://localhost/wordpress/wp-content/uploads/2019/02/no_picture.png";
+        
     } else {
         $url = get_the_post_thumbnail_url();
+        
     }
     $rows[$count] = $rows[$count] . 
     '<div class="col-xs-12 col-sm-8 col-md-5 preview-articles">' .
@@ -38,7 +42,7 @@ while ($query->have_posts()) {
             <h3><a href="' . get_permalink() . '">' . get_the_title() . '</a></h3>
         </div>' .
         '<div class="post-author"> ' . 
-            '<div class="post-image" style="background-image: url('.$url.')>
+            '<div class="post-image" style="background-image: url('.$url.');">
             
             </div>'  . 
             '<div class="d-flex justify-content-between">

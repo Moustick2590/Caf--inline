@@ -5,6 +5,9 @@
 
 <?php get_header(); ?>
 <?php get_template_part( 'template-parts/template-part', 'mainheader' ); ?>
+<p>Bienvenue sur notre blog !</p>
+<?php get_template_part( 'template-parts/template-part', 'endmainheader' ); ?>
+
 <main>
     <section id="team" class="container-fluid">
         <div class="container">

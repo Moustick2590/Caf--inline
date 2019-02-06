@@ -5,6 +5,8 @@
 
 <?php get_header(); ?>
 <?php get_template_part( 'template-parts/template-part', 'mainheader' ); ?>
+<p>La team !</p>
+<?php get_template_part( 'template-parts/template-part', 'endmainheader' ); ?>
 <main>
     <section class="container-fluid" id="promo" >
         <div class="container">

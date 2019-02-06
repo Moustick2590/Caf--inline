@@ -21,6 +21,7 @@ body #mainheader #navBar {
 }
 body #mainheader #navBar .burger {
   background-image: url(images/icons/cookie.png);
+  border-style: none;
 }
 body #mainheader #navBar #navheader {
   display: flex;
@@ -30,7 +31,6 @@ body #mainheader #navBar #navheader {
 body #mainheader #navBar #navheader ul {
   display: flex;
   align-items: center;
-  width: 50vw;
 }
 body #mainheader #navBar #navheader ul li {
   list-style-type: none;
@@ -59,14 +59,16 @@ body #mainheader #logopromo #cafe {
 }
 body #mainheader #logopromo #titre {
   color: #FFEFD4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 body #mainheader #logopromo #titre h1 {
-  font-size: 4em;
-  padding-top: 5%;
+  font-size: 5em;
 }
 body #mainheader #logopromo #titre p {
-  font-size: 2em;
-  padding-top: 30%;
+  font-size: 4em;
 }
 body #secondaryheader {
   background-image: url(images/background_header_pages.jpg);
@@ -80,6 +82,7 @@ body #secondaryheader #navBar {
 }
 body #secondaryheader #navBar .burger {
   background-image: url(images/icons/cookie.png);
+  border-style: none;
 }
 body #secondaryheader #navBar #navheader {
   display: flex;
@@ -112,6 +115,7 @@ body #secondaryheader #navBar #navheader #small_icon {
 }
 body #secondaryheader #logopromo1 #titre {
   color: #FFEFD4;
+  text-align: center;
 }
 body #secondaryheader #logopromo1 #titre h1 {
   font-size: 4em;
@@ -120,11 +124,13 @@ body #secondaryheader #logopromo1 #titre h1 {
 body #secondaryheader #logopromo1 #cafe {
   display: none;
 }
-body main {
-  background-image: url(images/background_main.png);
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: repeat-y;
+@media only screen and (min-width: 800px) {
+  body main {
+    background-image: url(images/background_main.png);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: repeat-y;
+  }
 }
 body main #team {
   padding-top: 5%;
@@ -184,7 +190,6 @@ body main #last_articles #pres-article a:hover {
   color: #f8d590;
 }
 body main #article {
-  font-family: "roboto";
   padding: 5% 0;
 }
 body main #article textarea {
@@ -198,15 +203,13 @@ body main #article h2 {
   color: #180e05;
 }
 body main #article p {
-  font-size: 1.5em;
+  font-size: 1em;
+  text-align: justify;
 }
 body main #article a {
   text-decoration: none;
   color: #472402;
   font-weight: 900;
-}
-body main #article li {
-  list-style: none;
 }
 body main #article #rightblock {
   background-color: #f8d590;
@@ -217,7 +220,11 @@ body main #article #rightblock {
 body main #article #rightblock #recentspost {
   font-size: 1.3em;
 }
+body main #article #rightblock li {
+  list-style-type: none;
+}
 body main #article #rightblock #submit {
+  font-size: 1em;
   border: none;
   border-radius: 1.5em;
   background-color: #472402;
@@ -225,30 +232,32 @@ body main #article #rightblock #submit {
   width: 100%;
   height: 2%;
 }
+body main #article #rightblock #submit:hover {
+  background-color: #180e05;
+  cursor: pointer;
+}
 body main #article #rightblock p {
   font-size: 1em;
 }
-body main #article textarea {
+body main #article #rightblock textarea {
   border-radius: 2em;
+  padding: 7%;
 }
-body main #article #postedby {
+body main #article #rightblock #postedby {
   font-size: 1em;
 }
-body main #article label {
+body main #article #rightblock label {
   font-size: 1em;
 }
-body main #article #submit {
-  font-size: 1em;
-}
-body main #article #reply-title {
+body main #article #rightblock #reply-title {
   font-size: 1.3em;
 }
-body main #article #comments {
+body main #article #rightblock #comments {
   font-size: 1.3em;
 }
-body main #article #author,
-body main #article #email,
-body main #article #url {
+body main #article #rightblock #author,
+body main #article #rightblock #email,
+body main #article #rightblock #url {
   display: block;
   width: 90%;
   border-radius: 1%;
@@ -265,26 +274,30 @@ body main .preview-articles {
 body main .preview-articles .post-title {
   text-align: center;
   padding: 4% 2% 2% 2%;
-  height: 20%;
+  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 body main .preview-articles .post-image {
   padding: 2%;
-  height: 30%;
-  display: flex;
-  align-items: center;
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 body main .preview-articles .auteur_date {
+  margin-top: 5%;
   font-size: 1.3em;
   padding: 2%;
 }
 body main .preview-articles .resume {
   text-align: justify;
   padding: 2%;
-  height: 20%;
-  overflow-y: scroll;
+  height: 20vh;
+  text-overflow: ellipsis;
+  overflow-y: hidden;
 }
 body main .preview-articles a {
   color: #f8d590;
@@ -294,6 +307,7 @@ body main .preview-articles a:hover {
 }
 body main .preview-articles .lien_single {
   padding: 2% 2% 4% 2%;
+  font-size: 1em;
 }
 body main .preview-articles .lien_single .grains {
   width: 35%;
@@ -315,6 +329,7 @@ body footer {
 }
 body footer #navfooter {
   display: flex;
+  color: white;
 }
 body footer #navfooter ul {
   display: flex;
@@ -335,9 +350,6 @@ body .social {
 }
 body .social .liensocial {
   padding: 5%;
-  font-size: 2em;
-}
-body header h1 {
   font-size: 2em;
 }
 

@@ -5,9 +5,9 @@
                 <span class="navbar-toggler-icon burger"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-around" id="navbarTogglerDemo01">
-                <a href="" class="col-md-3 navbar-brand " id="lien_cafe">Café-inline<img class="img-fluid" src="/wordpress/wp-content/uploads/2019/02/logo_café-inline_petit.png" alt="logo café inline mini" id="small_icon" width="152" height="150"> </a>
+                <a href="http://localhost/wordpress/accueil" class="col-md-3 navbar-brand " id="lien_cafe">Café-inline<img class="img-fluid" src="/wordpress/wp-content/uploads/2019/02/logo_café-inline_petit.png" alt="logo café inline mini" id="small_icon" width="152" height="150"> </a>
                 <div class="col-md-6">
-                <?php wp_nav_menu( array( 'theme_location' => 'Header Menu' ) ); ?>
+                <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class'=> 'headerMenu_class' ) ); ?>
                 </div>
                 <div class="col-md-2 d-flex social" >
                     <a class="nav-link liensocial" target="_blank" href="https://www.linkedin.com/company/access-code-school/about/"><i class="fab fa-linkedin"></i></a>
