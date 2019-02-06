@@ -139,23 +139,43 @@ body {
             #carousel {
                 .carousel-inner {
                     .carousel-item {
-                        min-height: 50vh;
-                        background-size: 100% auto;
+                        height: 35vh;
+                        background-size: cover;
                         background-repeat: no-repeat;
                         .carousel_text {
-                            min-heigh: 50vh;
+                            height: 35vh;
                             width: 80%;
                             margin: auto;
                             color: white;
                             text-shadow: 1px 1px 1px #000000;
                             background-color: rgba(40, 40, 40, 0.5);
                             padding: 5%;
+                            a {
+                                color: #f8d590;
+                                &:hover {
+                                    color: #472402;
+                                }
+                            }
                             p {
                                 text-align: justify;
+                                word-wrap: break-word;
+                                white-space: normal;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
                             }
                             h3 {
                                 text-align: center;
                             }
+                        }
+                    }
+                }
+                .controle_carousel {
+                    opacity: 1;
+                    .fleche {
+                        color: #f8d590;
+                        font-size: 2em;
+                        &:hover {
+                            color: #472402;
                         }
                     }
                 }
@@ -245,15 +265,23 @@ body {
             background-image: url(images/background_biscuit.jpg);
             background-size: 100% 100%;
             background-repeat: no-repeat;
-            padding: 5%;
+            min-height: 80vh;
+            padding: 7.5%;
             margin: 5% 0;
             color: white;
             .post-title {
                 text-align: center;
                 padding: 4% 2% 2% 2%;
+                height: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
             .post-image {
                 padding: 2%;
+                height: 30%;
+                display: flex;
+                align-items: center;
             }
             .auteur_date {
                 font-size: 1.3em;
@@ -261,7 +289,9 @@ body {
             }
             .resume {
                 text-align: justify;
-                padding: 2%
+                padding: 2%;
+                height: 20%;
+                overflow-y: scroll;
             }
             a {
                 color: #f8d590;
@@ -273,6 +303,7 @@ body {
                 padding: 2% 2% 4% 2%;
                 .grains {
                     width: 35%;
+                    margin: 5%;
                     height: auto;
                 }
             }

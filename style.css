@@ -134,12 +134,12 @@ body main #last_articles {
   padding: 5% 0;
 }
 body main #last_articles #carousel .carousel-inner .carousel-item {
-  min-height: 50vh;
-  background-size: 100% auto;
+  height: 35vh;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 body main #last_articles #carousel .carousel-inner .carousel-item .carousel_text {
-  min-heigh: 50vh;
+  height: 35vh;
   width: 80%;
   margin: auto;
   color: white;
@@ -147,11 +147,31 @@ body main #last_articles #carousel .carousel-inner .carousel-item .carousel_text
   background-color: rgba(40, 40, 40, 0.5);
   padding: 5%;
 }
+body main #last_articles #carousel .carousel-inner .carousel-item .carousel_text a {
+  color: #f8d590;
+}
+body main #last_articles #carousel .carousel-inner .carousel-item .carousel_text a:hover {
+  color: #472402;
+}
 body main #last_articles #carousel .carousel-inner .carousel-item .carousel_text p {
   text-align: justify;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 body main #last_articles #carousel .carousel-inner .carousel-item .carousel_text h3 {
   text-align: center;
+}
+body main #last_articles #carousel .controle_carousel {
+  opacity: 1;
+}
+body main #last_articles #carousel .controle_carousel .fleche {
+  color: #f8d590;
+  font-size: 2em;
+}
+body main #last_articles #carousel .controle_carousel .fleche:hover {
+  color: #472402;
 }
 body main #last_articles #pres-article {
   text-align: justify;
@@ -237,16 +257,24 @@ body main .preview-articles {
   background-image: url(images/background_biscuit.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding: 5%;
+  min-height: 80vh;
+  padding: 7.5%;
   margin: 5% 0;
   color: white;
 }
 body main .preview-articles .post-title {
   text-align: center;
   padding: 4% 2% 2% 2%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 body main .preview-articles .post-image {
   padding: 2%;
+  height: 30%;
+  display: flex;
+  align-items: center;
 }
 body main .preview-articles .auteur_date {
   font-size: 1.3em;
@@ -255,6 +283,8 @@ body main .preview-articles .auteur_date {
 body main .preview-articles .resume {
   text-align: justify;
   padding: 2%;
+  height: 20%;
+  overflow-y: scroll;
 }
 body main .preview-articles a {
   color: #f8d590;
@@ -267,6 +297,7 @@ body main .preview-articles .lien_single {
 }
 body main .preview-articles .lien_single .grains {
   width: 35%;
+  margin: 5%;
   height: auto;
 }
 body main #promo {

@@ -27,13 +27,20 @@ while ($query->have_posts()) {
     if ($rows[$count] == "") {
         $rows[$count] = '<div class="row justify-content-around">';
     }
+    if(get_the_post_thumbnail() == '') {
+        $url = "https://localhost/wordpress/wp-content/uploads/2019/02/no_picture.png";
+    } else {
+        $url = get_the_post_thumbnail_url();
+    }
     $rows[$count] = $rows[$count] . 
     '<div class="col-xs-12 col-sm-8 col-md-5 preview-articles">' .
         '<div class="post-title">
             <h3><a href="' . get_permalink() . '">' . get_the_title() . '</a></h3>
         </div>' .
         '<div class="post-author"> ' . 
-            '<img src="' .get_the_post_thumbnail_url(). '" class="img-fluid post-image" alt="image de l\'article">'  . 
+            '<div class="post-image" style="background-image: url('.$url.')>
+            
+            </div>'  . 
             '<div class="d-flex justify-content-between">
                 <p class="auteur_date">' .get_the_author().'</p><p class="auteur_date">' . get_the_date(). '</p>
             </div> 
