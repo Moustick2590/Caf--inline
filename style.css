@@ -337,5 +337,8 @@ body .social .liensocial {
   padding: 5%;
   font-size: 2em;
 }
+body header h1 {
+  font-size: 2em;
+}
 
 /*# sourceMappingURL=style.css.map */
