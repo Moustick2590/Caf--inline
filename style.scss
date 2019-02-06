@@ -1,13 +1,318 @@
 @font-face {
-    font-family: 'Acmee';
+    font-family: 'roboto';
+    src: url("fonts/Roboto-Light.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'acme';
     src: url("fonts/Acme-Regular.ttf") format('truetype');
 }
 
-$font: 'Acmee';
+$font: 'acme';
+$articlefont: 'roboto';
 body {
     font-family: $font;
-    header {
-        h1 {
+    #mainheader {
+        background-image: url(images/background_header.jpg);
+        background-size: cover;
+        padding-bottom: 5%;
+        #navBar {
+            position: fixed;
+            z-index: 1000;
+            background-color: rgba($color: #180e05, $alpha: 0.8);
+            .burger {
+                background-image: url(images/icons/cookie.png);
+            }
+            #navheader {
+                display: flex;
+                justify-content: space-between;
+                ul {
+                    display: flex;
+                    align-items: center;
+                    width: 50vw;
+                    li {
+                        list-style-type: none;
+                        padding: 0 3%;
+                    }
+                }
+                #lien_cafe {
+                    margin-top: -1%;
+                }
+                a {
+                    color: white;
+                    &:hover {
+                        color: #f8d590;
+                    }
+                }
+                padding-top: 2.5%;
+                #small_icon {
+                    width: 20%;
+                    height: 20%;
+                    margin-top: -10%;
+                    padding-left: 2%;
+                }
+            }
+        }
+        #logopromo {
+            padding-top: 10%;
+            #cafe {
+                width: 50%;
+            }
+            #titre {
+                color: #FFEFD4;
+                h1 {
+                    font-size: 4em;
+                    padding-top: 5%;
+                }
+                p {
+                    font-size: 2em;
+                    padding-top: 30%;
+                }
+            }
+        }
+    }
+    #secondaryheader {
+        background-image: url(images/background_header_pages.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        #navBar {
+            position: fixed;
+            z-index: 1000;
+            background-color: rgba($color: #180e05, $alpha: 0.8);
+            .burger {
+                background-image: url(images/icons/cookie.png);
+            }
+            #navheader {
+                display: flex;
+                justify-content: space-between;
+                ul {
+                    display: flex;
+                    align-items: center;
+                    width: 50vw;
+                    li {
+                        list-style-type: none;
+                        padding: 0 3%;
+                    }
+                }
+                #lien_cafe {
+                    margin-top: -1%;
+                }
+                a {
+                    color: white;
+                    &:hover {
+                        color: #f8d590;
+                    }
+                }
+                padding-top: 2.5%;
+                #small_icon {
+                    width: 20%;
+                    height: 20%;
+                    margin-top: -10%;
+                    padding-left: 2%;
+                }
+            }
+        }
+        #logopromo1 {
+            #titre {
+                color: #FFEFD4;
+                h1 {
+                    font-size: 4em;
+                    padding: 12.5% 0 7.5% 0;
+                }
+            }
+            #cafe {
+                display: none;
+            }
+        }
+    }
+    main {
+        background-image: url(images/background_main.png);
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: repeat-y;
+        #team {
+            padding-top: 5%;
+            text-align: justify;
+        }
+        #last_articles {
+            padding: 5% 0;
+            #carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        min-height: 50vh;
+                        background-size: 100% auto;
+                        background-repeat: no-repeat;
+                        .carousel_text {
+                            min-heigh: 50vh;
+                            width: 80%;
+                            margin: auto;
+                            color: white;
+                            text-shadow: 1px 1px 1px #000000;
+                            background-color: rgba(40, 40, 40, 0.5);
+                            padding: 5%;
+                            p {
+                                text-align: justify;
+                            }
+                            h3 {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+            #pres-article {
+                text-align: justify;
+                padding: 5%;
+                a {
+                    color: #472402;
+                    &:hover {
+                        color: #f8d590;
+                    }
+                }
+            }
+        }
+        #article {
+            font-family: $articlefont;
+            padding: 5% 0;
+            textarea {
+                width: 100%;
+            }
+            h2 {
+                text-align: center;
+                padding-bottom: 2%;
+                font-size: 3em;
+                font-weight: 800;
+                color: #180e05;
+            }
+            p {
+                font-size: 1.5em;
+            }
+            a {
+                text-decoration: none;
+                color: #472402;
+                font-weight: 900;
+            }
+            li {
+                list-style: none;
+            }
+            #rightblock {
+                background-color: #f8d590;
+                border-radius: 3em;
+                padding: 10%;
+                font-size: 1em;
+                #recentspost {
+                    font-size: 1.3em;
+                }
+                #submit {
+                    border: none;
+                    border-radius: 1.5em;
+                    background-color: #472402;
+                    color: white;
+                    width: 100%;
+                    height: 2%;
+                }
+                p {
+                    font-size: 1em;
+                }
+            }
+            textarea {
+                border-radius: 2em;
+            }
+            #postedby {
+                font-size: 1em;
+            }
+            label {
+                font-size: 1em;
+            }
+            #submit {
+                font-size: 1em;
+            }
+            #reply-title {
+                font-size: 1.3em;
+            }
+            #comments {
+                font-size: 1.3em;
+            }
+            #author,
+            #email,
+            #url {
+                display: block;
+                width: 90%;
+                border-radius: 1%;
+            }
+        }
+        .preview-articles {
+            background-image: url(images/background_biscuit.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            padding: 5%;
+            margin: 5% 0;
+            color: white;
+            .post-title {
+                text-align: center;
+                padding: 4% 2% 2% 2%;
+            }
+            .post-image {
+                padding: 2%;
+            }
+            .auteur_date {
+                font-size: 1.3em;
+                padding: 2%;
+            }
+            .resume {
+                text-align: justify;
+                padding: 2%
+            }
+            a {
+                color: #f8d590;
+                &:hover {
+                    color: #FFEFD4;
+                }
+            }
+            .lien_single {
+                padding: 2% 2% 4% 2%;
+                .grains {
+                    width: 35%;
+                    height: auto;
+                }
+            }
+        }
+        #promo {
+            padding: 4% 0;
+            .alone {
+                text-align: center;
+                .photo {
+                    padding: 10% 5%;
+                }
+            }
+        }
+    }
+    footer {
+        background-color: #180e05;
+        padding: 2% 0;
+        #navfooter {
+            display: flex;
+            ul {
+                display: flex;
+                align-items: center;
+                li {
+                    list-style-type: none;
+                    padding: 0 3%;
+                }
+            }
+            a {
+                color: white;
+                &:hover {
+                    color: #f8d590;
+                }
+            }
+        }
+    }
+    //-------------------------class icones réseaux sociaux-------------------------------------
+    .social {
+        margin-top: -1.5%;
+        .liensocial {
+            padding: 5%;
             font-size: 2em;
         }
     }
