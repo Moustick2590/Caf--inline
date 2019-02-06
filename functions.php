@@ -33,7 +33,3 @@ add_theme_support( 'post-thumbnails' );
 ?>
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 80d71e5a2436805577d5678df0d7e60f5bf1d8c0
