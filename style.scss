@@ -22,6 +22,7 @@ body {
             background-color: rgba($color: #180e05, $alpha: 0.8);
             .burger {
                 background-image: url(images/icons/cookie.png);
+                border-style: none;
             }
             #navheader {
                 display: flex;
@@ -29,7 +30,6 @@ body {
                 ul {
                     display: flex;
                     align-items: center;
-                    width: 50vw;
                     li {
                         list-style-type: none;
                         padding: 0 3%;
@@ -60,13 +60,15 @@ body {
             }
             #titre {
                 color: #FFEFD4;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
                 h1 {
-                    font-size: 4em;
-                    padding-top: 5%;
+                    font-size: 5em;
                 }
                 p {
-                    font-size: 2em;
-                    padding-top: 30%;
+                    font-size: 4em;
                 }
             }
         }
@@ -81,6 +83,7 @@ body {
             background-color: rgba($color: #180e05, $alpha: 0.8);
             .burger {
                 background-image: url(images/icons/cookie.png);
+                border-style: none;
             }
             #navheader {
                 display: flex;
@@ -115,6 +118,7 @@ body {
         #logopromo1 {
             #titre {
                 color: #FFEFD4;
+                text-align: center;
                 h1 {
                     font-size: 4em;
                     padding: 12.5% 0 7.5% 0;
@@ -126,10 +130,12 @@ body {
         }
     }
     main {
-        background-image: url(images/background_main.png);
-        background-size: 100% auto;
-        background-position: center;
-        background-repeat: repeat-y;
+        @media only screen and (min-width: 800px) {
+            background-image: url(images/background_main.png);
+            background-size: 100% auto;
+            background-position: center;
+            background-repeat: repeat-y;
+        }
         #team {
             padding-top: 5%;
             text-align: justify;
@@ -139,23 +145,43 @@ body {
             #carousel {
                 .carousel-inner {
                     .carousel-item {
-                        min-height: 50vh;
-                        background-size: 100% auto;
+                        height: 35vh;
+                        background-size: cover;
                         background-repeat: no-repeat;
                         .carousel_text {
-                            min-heigh: 50vh;
+                            height: 35vh;
                             width: 80%;
                             margin: auto;
                             color: white;
                             text-shadow: 1px 1px 1px #000000;
                             background-color: rgba(40, 40, 40, 0.5);
                             padding: 5%;
+                            a {
+                                color: #f8d590;
+                                &:hover {
+                                    color: #472402;
+                                }
+                            }
                             p {
                                 text-align: justify;
+                                word-wrap: break-word;
+                                white-space: normal;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
                             }
                             h3 {
                                 text-align: center;
                             }
+                        }
+                    }
+                }
+                .controle_carousel {
+                    opacity: 1;
+                    .fleche {
+                        color: #f8d590;
+                        font-size: 2em;
+                        &:hover {
+                            color: #472402;
                         }
                     }
                 }
@@ -172,7 +198,6 @@ body {
             }
         }
         #article {
-            font-family: $articlefont;
             padding: 5% 0;
             textarea {
                 width: 100%;
@@ -185,15 +210,13 @@ body {
                 color: #180e05;
             }
             p {
-                font-size: 1.5em;
+                font-size: 1em;
+                text-align: justify;
             }
             a {
                 text-decoration: none;
                 color: #472402;
                 font-weight: 900;
-            }
-            li {
-                list-style: none;
             }
             #rightblock {
                 background-color: #f8d590;
@@ -203,65 +226,85 @@ body {
                 #recentspost {
                     font-size: 1.3em;
                 }
+                li {
+                    list-style-type: none;
+                }
                 #submit {
+                    font-size: 1em;
                     border: none;
                     border-radius: 1.5em;
                     background-color: #472402;
                     color: white;
                     width: 100%;
                     height: 2%;
+                    &:hover {
+                        background-color: #180e05;
+                        cursor: pointer;
+                    }
                 }
                 p {
                     font-size: 1em;
                 }
-            }
-            textarea {
-                border-radius: 2em;
-            }
-            #postedby {
-                font-size: 1em;
-            }
-            label {
-                font-size: 1em;
-            }
-            #submit {
-                font-size: 1em;
-            }
-            #reply-title {
-                font-size: 1.3em;
-            }
-            #comments {
-                font-size: 1.3em;
-            }
-            #author,
-            #email,
-            #url {
-                display: block;
-                width: 90%;
-                border-radius: 1%;
+                textarea {
+                    border-radius: 2em;
+                    padding: 7%;
+                }
+                #postedby {
+                    font-size: 1em;
+                }
+                label {
+                    font-size: 1em;
+                }
+                #reply-title {
+                    font-size: 1.3em;
+                }
+                #comments {
+                    font-size: 1.3em;
+                }
+                #author,
+                #email,
+                #url {
+                    display: block;
+                    width: 90%;
+                    border-radius: 1%;
+                }
             }
         }
         .preview-articles {
             background-image: url(images/background_biscuit.jpg);
             background-size: 100% 100%;
             background-repeat: no-repeat;
-            padding: 5%;
+            min-height: 80vh;
+            padding: 7.5%;
             margin: 5% 0;
             color: white;
             .post-title {
                 text-align: center;
                 padding: 4% 2% 2% 2%;
+                height: 15vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
             .post-image {
                 padding: 2%;
+                width: 100%;
+                height: 30vh;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
             }
             .auteur_date {
+                margin-top: 5%;
                 font-size: 1.3em;
                 padding: 2%;
             }
             .resume {
                 text-align: justify;
-                padding: 2%
+                padding: 2%;
+                height: 20vh;
+                text-overflow: ellipsis;
+                overflow-y: hidden;
             }
             a {
                 color: #f8d590;
@@ -271,8 +314,10 @@ body {
             }
             .lien_single {
                 padding: 2% 2% 4% 2%;
+                font-size: 1em;
                 .grains {
                     width: 35%;
+                    margin: 5%;
                     height: auto;
                 }
             }
@@ -292,6 +337,7 @@ body {
         padding: 2% 0;
         #navfooter {
             display: flex;
+            color: white;
             ul {
                 display: flex;
                 align-items: center;

@@ -5,6 +5,9 @@
 
 <?php get_header(); ?>
 <?php get_template_part( 'template-parts/template-part', 'mainheader' ); ?>
+<p>Bienvenue sur notre blog !</p>
+<?php get_template_part( 'template-parts/template-part', 'endmainheader' ); ?>
+
 <main>
     <section id="team" class="container-fluid">
         <div class="container">
@@ -44,6 +47,7 @@
                                 $thumb_url = $thumb_url_array[0];
                                 $temp['title'] = get_the_title();
                                 $temp['excerpt'] = get_the_excerpt();
+                                $temp['permalink'] = get_the_permalink();
                                 $temp['image'] = $thumb_url;
                                 $slides[] = $temp;
                             }
@@ -56,25 +60,19 @@
 
                 <div id="carousel" class="carousel slide col-md-6" data-ride="carousel">
 
-                    <ol class="carousel-indicators">
-                    <?php for($i=0;$i<count($slides);$i++) { ?>
-                    <li data-target="#carousel" data-slide-to="<?php echo $i ?>" <?php if($i==0) { ?>class="active"<?php } ?>></li>
-                    <?php } ?>
-                    </ol>
-
                     <div class="carousel-inner" role="listbox">
                         <?php $i=0; foreach($slides as $slide) { extract($slide); ?>
                         <div style="background-image: url('<?php echo $image ?>');" class="carousel-item <?php if($i == 0) { ?>active<?php } ?>">
                             <div class="carousel_text">
-                                <h3><?php echo $title; ?></h3>
+                                <a href="<?php echo $permalink ?>"><h3><?php echo $title; ?></h3></a>
                                 <p><?php echo $excerpt; ?></p>
                             </div>
                         </div>
                         <?php $i++; } ?>
                     </div>
 
-                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
-                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a> 
+                    <a class="carousel-control-prev controle_carousel" href="#carousel" role="button" data-slide="prev"><i class="fas fa-angle-left fleche"></i> <span class="sr-only">Previous</span></a>
+                    <a class="carousel-control-next controle_carousel" href="#carousel" role="button" data-slide="next"><i class="fas fa-angle-right fleche"></i> <span class="sr-only">Next</span></a> 
                 </div>
                 <?php } ?>
                 <div class="col-md-5" id="pres-article">
