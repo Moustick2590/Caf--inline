@@ -8,8 +8,9 @@ wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
 
 // Chargement des scripts
 wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery.min.js');
+wp_enqueue_script( 'script', get_template_directory_uri() . '/js/bootstrap.bundle.min.js');
 wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js');
-wp_enqueue_script( 'script', get_template_directory_uri() . '/js/app.js');
+
 }
 
 
